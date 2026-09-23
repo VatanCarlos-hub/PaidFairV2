@@ -163,4 +163,4 @@ Everything stored by this contract is public and permanent. **Do not enter names
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+Released under the MIT License.

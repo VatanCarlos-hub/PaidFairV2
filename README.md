@@ -117,7 +117,7 @@ Clients and agents should poll `get_by_request` with their own `request_id`. Tha
 | 2 | `annual_gross` = `20000`, `request_id` = `pf-test-0002` | `UNDERPAID` |
 | 3 | `annual_gross` = `150000`, `request_id` = `pf-test-0003` | `WELLPAID` |
 | 4 | `role` = `Xyzqwerty`, `request_id` = `pf-test-0004` | `INSUFFICIENT_DATA` (likely; a model may still guess a number) |
-| 5 | `source_url` = raw URL of [`demo-salary-a.md`](demo-salary-a.md), `request_id` = `pf-test-0005` | `FAIR`, basis `SOURCE` |
+| 5 | `source_url` = raw URL of [`DemoSalary.md`](DemoSalary.md), `request_id` = `pf-test-0005` | `FAIR`, basis `SOURCE` |
 | 6 | `source_url` = `https://diese-domain-existiert-nicht-xyz123.com`, `request_id` = `pf-test-0006` | basis `MODEL_KNOWLEDGE` |
 | 7 | repeat `request_id` = `pf-test-0001` | rejected: `request_id already used` |
 
@@ -125,16 +125,7 @@ Clients and agents should poll `get_by_request` with their own `request_id`. Tha
 
 A test only counts as passed if the consensus history does **not** end in `UNDETERMINED`.
 
-[`demo-salary-a.md`](demo-salary-a.md) contains **synthetic** figures (Junior Data Analyst, Berlin: 42,000 to 52,000 EUR). It exists only to demonstrate the source path with a known expected result.
-
-## Test evidence
-
-| # | Transaction hash | Consensus | Verdict |
-|---|---|---|---|
-| 1 | `[TX_HASH]` | [RESULT] | [VERDICT] |
-| 2 | `[TX_HASH]` | [RESULT] | [VERDICT] |
-| 3 | `[TX_HASH]` | [RESULT] | [VERDICT] |
-| 5 | `[TX_HASH]` | [RESULT] | [VERDICT] |
+[`DemoSalary.md`](DemoSalary.md) contains **synthetic** figures (Junior Data Analyst, Berlin: 42,000 to 52,000 EUR). It exists only to demonstrate the source path with a known expected result.
 
 ## Limitations
 
